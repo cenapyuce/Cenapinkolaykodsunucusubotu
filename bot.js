@@ -1,15 +1,3 @@
-const express = require('express');
-const app = express();
-const http = require('http');
-    app.get("/", (request, response) => {
-  
-    });
-    app.listen(process.env.PORT);
-    setInterval(() => {
-    http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
-    }, 280000);
-//Bu Bölümleri Değiştirmeyin
-// ________________________________________________________________
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const ayarlar = require('./ayarlar.json');
@@ -18,7 +6,7 @@ const fs = require('fs');
 const ms = require('ms');
 const moment = require('moment');
 const db = require('quick.db');
-const Jimp = require('jimp');          fs
+const Jimp = require('jimp');        
 
 require('./util/eventLoader')(client);
 
